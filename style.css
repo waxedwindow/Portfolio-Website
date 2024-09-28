@@ -1,0 +1,539 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background:linear-gradient(#bd73fa, black);
+    padding: 1rem;
+    background-attachment: center;
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid; */
+    padding-left: 25%;
+    padding-right: 25%;
+}
+h1{
+    color: white;
+    font-family:"Dela Gothic One", sans-serif;
+    text-align: center;
+    position: static;
+    padding: 40px;
+}
+h2{
+    color: white;
+    font-family:"Dela Gothic One", sans-serif;
+    position: relative;
+    text-align: center;
+}
+h3{
+    color: white;
+    font-weight: bold;
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+}
+
+.profile{
+    height: 600px;
+    width: 1410px;
+    display: flex;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50);
+    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+#profile-p1{
+    align-self: center;
+}
+.profileimage{
+    border-color: white;
+    border-radius: 10px;
+    float: right; 
+    position:static;  
+}
+.p1{
+    color: white;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    border: 10px solid;
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(50, 50, 50);
+    height: 500px;
+    width: 810px;
+    border-radius: 10px;
+}
+.p2{
+    color: white;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    border: 10px solid;
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(50, 50, 50);
+    height: 295px;
+    width: 700px;
+    border-radius: 10px;
+    float: right;
+    align-self: center;
+}
+.p3{
+    color: white;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    border: 10px solid;
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(50, 50, 50);
+    height: 295px;
+    width: 810px;
+    border-radius: 10px;
+    align-self: center;
+}
+.p4{
+    color: white;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    border: 10px solid;
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(50, 50, 50);
+    height: 310px;
+    width: 700px;
+    border-radius: 10px;
+    float: right;
+    align-self: center;
+}
+.guitar{
+    height: 620px;
+    width: 1410px;
+    padding: 1rem;
+    display: flex;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50);
+    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
+    justify-content: space-between;
+}
+#guitar-p2{
+    align-self: center;
+}
+.bassguitarimage{
+    height: 295px;
+    width: 300px;
+    object-fit: cover;
+    /* border-style: solid; */
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    float: left; 
+    position:absolute;  
+
+}
+.guitarvid{
+    object-fit: cover;
+    object-position: 0%, -20%;
+    height: 400px;
+    width: 300px;
+    /* border: 5px solid; */
+    border-color: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 320px;
+}
+.guitarimage1{
+    height: 305px;
+    width: 300px;
+    object-fit:cover;
+    object-position: 0% 50%;
+    /* border-style: solid; */
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 315px;
+}
+.guitarimage2{
+    height: 200px;
+    width: 300px;
+    object-fit:cover;
+    object-position: 0% 75%;
+    /* border-style: solid; */
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 320px;
+}
+.cadets{
+    height: 610px;
+    width: 1410px;
+    padding: 1rem;
+    display: flex;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50);
+    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+#cadets-p3{
+    align-self: center;
+}
+
+.cadetimage1{
+    height: 600px;
+    width: 400px;
+    /* border-style: solid; */
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.planes{
+    height: 620px;
+    width: 1410px;
+    padding: 1rem;
+    display: flex;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50);
+    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
+    justify-content: space-between;
+    column-gap: 10px;
+}
+#planes-p4{
+    align-self: center;
+}
+.plane1{
+    height: 250px;
+    width: 300px;
+    object-fit: cover; 
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 20px;
+}
+.plane2{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 285px;
+}
+.plane3{
+    height: 300px;
+    width: 225px;
+    object-fit: cover;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 285px;
+    margin-left: 320px;
+}
+.starry1{
+    height: 250px;
+    width: 225px;
+    object-fit: cover;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation ul{
+    list-style-type: none;
+    background-color: rgb(50, 50, 50);
+    border-radius: 50px;
+    border-width: 50px;
+    padding: 15px;
+    font-family: "Dela Gothic One";
+    overflow: hidden;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+.navigation a:hover{
+    background-color: rgb(31, 31, 31);
+    border-radius: 50px;
+    border-width: 50px;
+}
+.navigation li{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#backbutton{
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    border-radius: 50px;
+    border-width: 50px;
+    color: white;
+    padding: 1.5rem;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.material-symbols-outlined{
+    height: 1.5rem;
+
+}
+
+/* Experience Tab */
+
+#BAEp{
+    display: flex;
+}
+#ENUp{
+    display: none;
+}
+
+.bodybox{
+    width: 1410px;
+    /* min-width: 2000px; */
+    display: flex;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-color: rgb(50, 50, 50);
+    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.navbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 564px;
+    background-color: rgb(50, 50, 50);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+}
+.navigatione{
+    display: flex;
+    float: left;
+    padding: 0%;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+}
+.navigatione ul{
+    list-style-type: none;
+    align-content: start;
+}
+.navigatione li{
+    padding: 1rem;
+    font-family: "Dela Gothic One";
+    font-size: 1.2rem;
+}
+.navigatione a{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    border-width: 50px;
+}
+button{
+    position: sticky;
+}
+.BAE{
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+}
+.ENU{
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: rgb(50, 50, 50);
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    width: 864px;
+    /* min-width: 1400px; */
+}
+.thecooldrone{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.BAEstart{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.heading{
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: "Dela Gothic One";
+    padding: 1rem;
+}
+.BAEmindmap{
+    padding: 1.2rem;
+    height: 600px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.geffect{
+    padding: 1.2rem;
+    height: 700px;
+    width: 600px;
+    object-fit: contain;
+    align-self: center;
+}
+.idea21{
+    padding: 1.2rem;
+    height: 700px;
+    width: 600px;
+    object-fit: contain;
+    align-self: center;
+}
+.idea2{
+    height: 700px;
+    width: 800px;
+    object-fit: contain;
+    align-self: center;
+}
+.inspiration{
+    padding: 1.2rem;
+    display: flex;
+    /* border: 1px solid; */
+}
+.b2{
+    object-fit: cover;
+    height: 400px;
+    width: 50%;
+}
+.xb35{
+    object-fit: cover;
+    height: 400px;
+    width: 50%;
+}
+.zipline{
+    object-fit: contain;
+    height: 400px;
+    width: auto
+}
+.CAD1{
+    display: flex;
+    padding: 1.2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+}
+.dronefront{
+    object-fit: cover;
+    height: 350px;
+    width: 50%;
+    /* border: 1px solid; */
+}
+.droneback{
+    object-fit: cover;
+    height: 350px;
+    width: 50%;
+    /* border: 1px solid; */
+}
+.finaldesign{
+    object-fit: contain;
+    height: auto;
+    height: auto;
+    padding: 1.2rem;
+}
+.dronelaunch{
+    display: flex;
+    align-self:center ;
+    object-fit: cover;
+    height: 800px;
+    width: 850px;
+    padding: 1.2rem;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    justify-content: center;
+}
+.presentation1{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+.presentation2{
+    padding-top: 1.2rem;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
