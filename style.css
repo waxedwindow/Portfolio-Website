@@ -327,18 +327,17 @@ h3{
     margin-top: 2rem;
 }
 #upbutton a:hover{
-    height: 2rem;
     transition: 0.3s ease;
 }
 #uparrow{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 a{
     text-decoration: none;
     color: white;
-    display: flex;
-    align-self: center;
+    display: inline;
+    align-self: center; 
     justify-content: center;
 }
 .material-symbols-outlined{
@@ -349,21 +348,22 @@ a{
 #backarrow{
     font-size: 2rem;
     position: absolute;
+    padding-bottom: 1rem;
 }
 .backp{
     position: relative;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     margin-top: 0.2rem;
 }
 
 /* Experience Tab */
 
 #BAEp{
-    display: flex;
+    display: none;
     transition: 0.5s ease;
 }
 #ENUp{
-    display: none;
+    display: flex;
     transition: 0.5s ease;
 }
 
@@ -427,14 +427,6 @@ button:hover{
     font-family: "Dela Gothic One";
     font-size: 1.5rem;
 
-}
-.ENU{
-    border: none;
-    background-color: inherit;
-    color: white;
-    padding: 1rem;
-    font-family: "Dela Gothic One";
-    font-size: 1.5rem;
 }
 p{
     display: flex;
@@ -569,7 +561,12 @@ p{
     width: 100%;
     object-fit: contain;
 }
-
+.silvercadet{
+    padding-top: 1.2rem;
+    height: 800px;
+    width: 100%;
+    object-fit: contain;
+}
 /* Projects Tab */
 
 #Arduinop{
@@ -585,5 +582,31 @@ p{
     align-self: center;
     object-fit: contain;
 }
-
-
+.enu1{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.enu2{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: cover;  
+}
+#enuinstalink{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #bd73fa;
+    font-size: 1.2rem;
+}
+.catapult{
+    padding: 1.2rem;
+    height: 800px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;  
+}
