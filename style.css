@@ -322,6 +322,7 @@ a{
     height: 1.5rem;
 
 }
+
 /* Experience Tab */
 
 .bodybox{
@@ -519,5 +520,12 @@ p{
     object-fit: contain;
 }
 
+/* Projects Tab */
 
+#Arduino{
+    display: block;
+}
+#Emulate{
+    display: none;
+}
 
