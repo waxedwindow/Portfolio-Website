@@ -359,11 +359,11 @@ a{
 /* Experience Tab */
 
 #BAEp{
-    display: none;
+    display: flex;
     transition: 0.5s ease;
 }
 #ENUp{
-    display: flex;
+    display: none;
     transition: 0.5s ease;
 }
 
