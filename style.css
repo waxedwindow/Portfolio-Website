@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0%;
@@ -312,24 +315,62 @@ h3{
     color: white;
     padding: 1.5rem;
     font-family: "Dela Gothic One";
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
+#upbutton{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    margin-top: 2rem;
+}
+#upbutton a:hover{
+    height: 2rem;
+    transition: 0.3s ease;
+}
+#uparrow{
+    font-size: 4rem;
+}
+
 a{
     text-decoration: none;
     color: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 .material-symbols-outlined{
     height: 1.5rem;
-
+    display: flex;
+    align-self: center;
+}
+#backarrow{
+    font-size: 2rem;
+    position: absolute;
+}
+.backp{
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 0.2rem;
 }
 
 /* Experience Tab */
 
+#BAEp{
+    display: flex;
+    transition: 0.5s ease;
+}
+#ENUp{
+    display: none;
+    transition: 0.5s ease;
+}
+
 .bodybox{
     width: 1410px;
-
+    /* min-width: 2000px; */
     display: flex;
-    border: 1px solid;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -344,13 +385,15 @@ a{
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
-    width: 564px;
+    width: 60%;
     background-color: rgb(50, 50, 50);
     border-top-left-radius: 10px ;
     border-bottom-left-radius: 10px;
+    
 }
 .navigatione{
     display: flex;
+    justify-content: center;
     float: left;
     padding: 0%;
     width: 100%;
@@ -366,18 +409,15 @@ a{
     padding: 1rem;
     font-family: "Dela Gothic One";
     font-size: 1.2rem;
+    text-align: center;
 }
 .navigatione a{
     text-decoration: none;
 }
-
 button:hover{
     background-color: rgb(31, 31, 31);
     border-radius: 10px;
     border-width: 50px;
-}
-button{
-    position: sticky;
 }
 .BAE{
     border: none;
@@ -386,6 +426,7 @@ button{
     padding: 1rem;
     font-family: "Dela Gothic One";
     font-size: 1.5rem;
+
 }
 .ENU{
     border: none;
@@ -400,14 +441,22 @@ p{
     flex-direction: column;
     float: right;
     background-color: rgb(50, 50, 50);
-    border-top-left-radius: 10px ;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
     padding: 1rem;
     margin: 1rem;
     font-family: "Comfortaa", sans-serif;
     color: white;
     font-size: 1.1rem;
-    width: 864px;
+    width: 60%;
+    /* min-width: 1400px; */
+}
+.thecooldrone{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
 }
 .BAEstart{
     padding: 1.2rem;
@@ -421,6 +470,7 @@ p{
     align-self: center;
     font-size: 1.5rem;
     font-family: "Dela Gothic One";
+    padding: 1rem;
 }
 .BAEmindmap{
     padding: 1.2rem;
@@ -522,10 +572,18 @@ p{
 
 /* Projects Tab */
 
-#Arduino{
+#Arduinop{
     display: block;
 }
-#Emulate{
+#Emulatep{
     display: none;
 }
+.enulogo{
+    padding: 1.2rem;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+
 

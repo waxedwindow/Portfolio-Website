@@ -6,38 +6,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <title>Experiences</title>
 </head>
 <body>
-    <span id="backbutton">
-        <span class="material-symbols-outlined">arrow_back</span>
-        <a href="index.html" target="_self" title="Dont touch this">Back</a>
-    </span>
-    <main>
-    <div><h1>Experiences</h1></div>
-    <div class="bodybox">
-       <div class="navbox"> 
-       <nav class="navigatione">
-        <ul>
-            <li><button onclick="BAEE()" class="BAE">BAE Systems Work Experience</button></li>
-            <li><button onclick="ENUU()" class="ENU">ENU Engineering Work Experience</button></li>
-        </ul>
-       </nav>
+<span id="backbutton">
+            <a href="index.html" target="_self" title="Back to Home"> 
+                <span class="material-symbols-outlined">
+                    <span id= "backarrow">arrow_back</span>
+                </span>
+                <span class="backp">Back</span>
+            </a>
+</span>
+        <main>
+        <div><h1>Experiences</h1></div>
+        <div class="bodybox">
+            <div class="navbox"> 
+                <nav class="navigatione">
+                    <ul>
+                        <li><button onclick="BAEE()" class="BAE">BAE Systems Work Experience</button></li>
+                        <li><button onclick="ENUU()" class="ENU">ENU Engineering Work Experience</button></li>
+                    </ul>
+                </nav>
+            </div>
 
-       </div>
-       <span id="BAE">
         <p id="BAEp">
         <span class="heading">November 2023</span>
         <br>
-        I undertook a Online Work Experience Course provided by BAE Systems, an Aerospace, Defence and Cybersecurity company that is vital to the UK's military.
-        <br>
+        I undertook a Online Work Experience Course provided by BAE Systems, an Aerospace, Defence and Cybersecurity company that is vital to the UK's military. This experience awarded me the Industrial Silver Cadet Award.
+        <br><img src="images/thecooldrone.png" class="thecooldrone" alt="my amazing design">
         <br>
         This course lasted an entire week and tested skills such as:
         <br>
-        <br>-Problem Solving
-        <br>-Teamwork
-        <br>-Quick thinking
-        <br>-CAD and Idea generation
+        <br>- Problem Solving
+        <br>- Teamwork
+        <br>- Quick thinking
+        <br>- CAD and Idea generation
+        <br>- Time management
         <br>
         <br>
         The objective of the experience was to generate, design and then present an idea of a Drone that was to be used for Humanitarian efforts such as Aid and rescue,
@@ -52,9 +57,10 @@
         <br>The design brief we were given were as such:
         <br>
         <br>- It needed to travel about 50km
-        <br>- The dimensions had to fit within ""
+        <br>- The dimensions had to fit within (400x800x500)mm
         <br>- The drone must be amphibious or travel over water
         <br>- It must carry at least 3 items for humanitarian aid (first aid kit, water, rations, etc)
+        <br>- Be as cost efficient as possible
         <br>
         <br>This was all to be done within 5 days as of the day it was presented to us.
         <br>
@@ -110,17 +116,26 @@
         <br>This experience did make me realise some of my flaws that I am working on fixing, such as procrastinating the drone design so much that I ended up having to finish the drone in 3 days rather than the 5 for others, because I was brainstorming and procrastinating so much. I am proud to say I rarely do that anymore and I like to do tasks as soon as possible.
         <br>
         <br>Overall, I absolutely loved this experience and it really tested my engineering mind and creativity, such as figuring out that loophole with the catapult and working on a tight deadline where I also had to scrap ideas. I hope to hone these skills and qualities of mine for the future. In the end, my effort really did pay off as I was awarded the Industrial Silver Cadet award by the end of it.
-        </span>
-
-        <span id="ENU">
-        <p id="ENUp">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, ullam. Asperiores similique ea voluptatum excepturi. Libero laboriosam atque excepturi dicta temporibus vero fugiat hic nostrum ducimus, pariatur, numquam quasi delectus?
         </p>
-        </span>
 
-        </p></span>
+        <p id="ENUp">
+            <span class="heading">October 2023</span>
+            <br>
+            I applied and was invited to a Work Experience Programme, provided by Edinburgh Napier University.
+            <br><img src="images/enulogo.jpg" class="enulogo" alt="enulogo">
+        </p>
+
+    </main>
+
+            <div id="upbutton">
+                <a href="#"><span class="material-symbols-outlined"><span id="uparrow">north</span></a>
+            </div>
     </div>
-    </main> 
-    <script src="app.js"></script>
+    <!-- <span class="material-symbols-outlined">
+        <a href="#"><span id="upbutton">north</span></a>
+    </span> -->
+
+<script src="app.js"></script>
 </body>
+
 </html>
