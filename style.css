@@ -45,6 +45,14 @@ h3{
     font-family: "Dela Gothic One", sans-serif;
     text-align: center;
 }
+.heading{
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: "Dela Gothic One";
+    text-align: center;
+    padding: 1rem;
+}
 
 .profile{
     height: 600px;
@@ -368,7 +376,7 @@ a{
 }
 
 .bodybox{
-    width: 1410px;
+    width: 90rem;
     /* min-width: 2000px; */
     display: flex;
     backdrop-filter: blur(10px);
@@ -385,7 +393,7 @@ a{
     margin-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
-    width: 60%;
+    width: 40%;
     background-color: rgb(50, 50, 50);
     border-top-left-radius: 10px ;
     border-bottom-left-radius: 10px;
@@ -414,20 +422,45 @@ a{
 .navigatione a{
     text-decoration: none;
 }
-button:hover{
+.navigatione button:hover{
     background-color: rgb(31, 31, 31);
     border-radius: 10px;
-    border-width: 50px;
+    border-width: 100%;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
-.BAE{
+.navbutton{
     border: none;
     background-color: inherit;
     color: white;
     padding: 1rem;
     font-family: "Dela Gothic One";
-    font-size: 1.5rem;
-
+    font-size: 2rem;
 }
+.subbutton{
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 0.5rem;
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+}
+.navsubutton button:hover{
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#cadet{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
 p{
     display: flex;
     flex-direction: column;
@@ -456,13 +489,6 @@ p{
     width: 800px;
     align-self: center;
     object-fit: contain;
-}
-.heading{
-    display: flex;
-    align-self: center;
-    font-size: 1.5rem;
-    font-family: "Dela Gothic One";
-    padding: 1rem;
 }
 .BAEmindmap{
     padding: 1.2rem;
@@ -541,7 +567,7 @@ p{
     align-self:center ;
     object-fit: cover;
     height: 800px;
-    width: 850px;
+    width: 800px;
     padding: 1.2rem;
 }
 .presentation{
@@ -566,14 +592,6 @@ p{
     height: 800px;
     width: 100%;
     object-fit: contain;
-}
-/* Projects Tab */
-
-#Arduinop{
-    display: block;
-}
-#Emulatep{
-    display: none;
 }
 .enulogo{
     padding: 1.2rem;
@@ -609,4 +627,42 @@ p{
     width: 800px;
     align-self: center;
     object-fit: contain;  
+}
+/* Projects Tab */
+#Websitep{
+    display: flex;
+}
+#ImportantPlaylist{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #bd73fa;
+    font-size: 2rem;
+}
+.website1{
+    height: 600px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;  
+}
+
+/* Arduino Section  */
+#arduinos{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+#ArduinoStart{
+    display: none;
+}
+#sevensegmentp{
+    display: none;
+}
+/* End of Arduino Section  */
+#emulationp{
+    display: none;
 }

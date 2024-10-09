@@ -20,23 +20,64 @@
 </span>
 <main>
         <div><h1>Projects</h1></div>
-        <div class="bodybox">
-        <div class="navbox"> 
+         <div class="bodybox">
+            <div class="navbox"> 
                 <nav class="navigatione">
                     <ul>
-                        <li><button onclick="Arduino()" class="BAE"><span id="Arduino">Arduino</span></button></li>
-                        <li><button onclick="Emulate()" class="BAE"><span id="Emulate">Emulation Device</span></button></li>
+                        <li><button onclick="Website()" class="navbutton"><div id="Website">This Website</div></button></li>
+                        <li><button onclick="Arduino()" class="navbutton"><div id="Arduino">Arduino</div></button></li>
+
+                        <div id="arduinos">
+                        <div class="navsubutton">
+
+                            <li><button onclick="ArduinoBeginning()" class="subbutton"><div id="ArduinoBeginning">The Beginning</div></button></li>
+                            <li><button onclick="SevenSegment()" class="subbutton"><div id="SevenSegment">7-Segment Display</div></button></li>
+                            <li><button onclick="FourSevenSegment()" class="subbutton"><div id="FourSevenSegment">4 Digit, 7-Segment Display</div></button></li>
+
+                        </div>
+                        </div>
+                        
+                        <li><button onclick="Emulate()" class="navbutton"><div id="Emulate">Emulation Console</div></button></li>
+                    
                     </ul>
                 </nav>
-        </div>
-        <p id="Arduinop">
+            </div>
+
+        <p id="Websitep">
+            <span class="heading">My biggest project as of 9/10/24 is most definitely this website.</span>
+            I've always had the idea of creating one, heavily inspired by the Youtuber "Network Chucks". I thought it was a great idea for me to gather all my experiences and skills onto a Website that I could show in applications and to employers, and I get to make it look cool.
+            <br>
+            <br>As a way to kill time productively and finding a new hobby, I started building this website on the 15th of September. I also chose to build it from scratch rather than using website building tools such as WordPress, because wheres the fun in that?
+            <br>
+            <br><img src="images/Projects/website1.jpg" class="website1" alt="websitebuilding">
+            <br>The code and framework behind the Website can be easily accessed by right-clicking the page and pressing "Inspect" or by pressing F12.
+            <span class="heading">How I built it</span>
+            Website building is as easy as people make it out. My previous experience with creating Websites was from when I learnt it as part of the National 5 Computing Science curriculum, in where I basically did nothing apart from creating a tiny HTML and CSS file with almost no Javascript.
+            I was pretty much building this with next to 0 previous knowledge, as the knowledge I did have before was really vague and limited.
+            <br>
+            <br>My main way of learning was through Youtube, specifically a Youtuber named BroCode. I have a playlist of the majority of videos I used to learn HTML, CSS and JS, shown by clicking below:
+            <a href="https://youtube.com/playlist?list=PLAAVP2mzhS4XPp4AgkPwet2GLRi-xWJ_i&si=Qn-YEX4xrbh_j8NM"><br><span id="ImportantPlaylist">Click Here</span></a>
+            In addition, I had to do alot of browsing through GitHub and Stack Overflow comments of people having the same issues I did to trouble shoot problems. I also used websites such as W3Schools and Mdn Web Docs. For tools, I use VSS Code to write everything with HTML, CSS and JS extensions and LiveServer to test the website.
+            <br>
+            <br>To upload the Website onto the internet, I use GitHub pages and I bought a domain name from Namecheap.com.
+        </p>
+
+        <!-- Arduino Section -->
+
+        <p id="ArduinoStart">
             burger
         </p>
 
-        <p id="Emulatep">
-            hotdog
+        <p id="sevensegmentp">
+            the one piece is real
         </p>
-        </div>
+
+        <!-- End of Arduino Section  -->
+
+        <p id="emulationp">
+            rawr
+        </p>
+         </div>
 
 </main>
 
