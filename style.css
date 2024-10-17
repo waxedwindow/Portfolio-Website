@@ -45,6 +45,42 @@ h3{
     font-family: "Dela Gothic One", sans-serif;
     text-align: center;
 }
+p{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: rgb(50, 50, 50);
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    width: 60%;
+    /* min-width: 1400px; */
+}
+pre{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: rgb(50, 50, 50);
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    width: 60%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+    align-self: center; 
+    justify-content: center;
+}
 .heading{
     display: flex;
     align-self: center;
@@ -285,6 +321,8 @@ h3{
     margin-left: 320px;
     margin-top: 20px;
 }
+
+/* Main Navigation Bar  */
 .navigation{
     display: flex;
     align-items: center;
@@ -315,6 +353,8 @@ h3{
     text-align: center;
     font-size: 1.2rem;
 }
+/* End of Main Navigation Bar  */
+
 #backbutton{
     position: absolute;
     background-color: rgb(31, 31, 31);
@@ -341,13 +381,6 @@ h3{
     font-size: 3rem;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    display: inline;
-    align-self: center; 
-    justify-content: center;
-}
 .material-symbols-outlined{
     height: 1.5rem;
     display: flex;
@@ -461,21 +494,7 @@ a{
     margin-left: 5%;
 }
 
-p{
-    display: flex;
-    flex-direction: column;
-    float: right;
-    background-color: rgb(50, 50, 50);
-    border-top-right-radius: 10px ;
-    border-bottom-right-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    font-family: "Comfortaa", sans-serif;
-    color: white;
-    font-size: 1.1rem;
-    width: 60%;
-    /* min-width: 1400px; */
-}
+
 .thecooldrone{
     padding: 1.2rem;
     height: 400px;
@@ -628,14 +647,46 @@ p{
     align-self: center;
     object-fit: contain;  
 }
+#CadetExperiencesp{
+    display: none;
+}
+#CadetAchievementsp{
+    display: none;
+}
+
+
+
+
+
 /* Projects Tab */
+.codebutton{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    font-family: "Dela Gothic One";
+    font-size: 2rem;
+}
+.stylecodebutton button:hover{
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.stylecodebutton{
+    display: flex;
+    justify-content: center;
+}
+
 #Websitep{
     display: flex;
 }
 #ImportantPlaylist{
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    padding: 1rem;
     color: #bd73fa;
     font-size: 2rem;
 }
@@ -647,6 +698,9 @@ p{
 }
 
 /* Arduino Section  */
+.comment{
+    color: orange;
+}
 #arduinos{
     display: none;
     justify-content: center;
@@ -661,6 +715,55 @@ p{
 }
 #sevensegmentp{
     display: none;
+}
+.sevensegment1{
+    height: 600px;
+    width: 800px;
+    padding: 1rem;
+    align-self: center;
+    object-fit: contain;  
+}
+#foursevencodep{
+    display: none;
+}
+#fourdigitsevensegmentp{
+    display: none;
+}
+.fourdigitsevensegment1{
+    height: 500px;
+    width: 800px;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.fourdigitsevensegment2{
+    height: 400px;
+    width: 800px;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.fourdigitsevensegmentvid{
+    height: 500px;
+    width: 800px;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
+#fakebombp{
+    display: none;
+}
+#fakebombcodep{
+    display: none;
+}
+.fakebomb1{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
 }
 /* End of Arduino Section  */
 #emulationp{

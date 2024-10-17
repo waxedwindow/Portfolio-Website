@@ -33,7 +33,8 @@
                             <li><button onclick="ArduinoBeginning()" class="subbutton"><div id="ArduinoBeginning">The Beginning</div></button></li>
                             <li><button onclick="SevenSegment()" class="subbutton"><div id="SevenSegment">7-Segment Display</div></button></li>
                             <li><button onclick="FourSevenSegment()" class="subbutton"><div id="FourSevenSegment">4 Digit, 7-Segment Display</div></button></li>
-
+                            <li><button onclick="FakeBomb()" class="subbutton"><div id="Fake Bomb">Fake Bomb Timer</div></button></li>
+                            <li><button onclick="LCD()" class="subbutton"><div id="LCD">LCD Display</div></button></li>
                         </div>
                         </div>
                         
@@ -47,9 +48,9 @@
             <span class="heading">My biggest project as of 9/10/24 is most definitely this website.</span>
             I've always had the idea of creating one, heavily inspired by the Youtuber "Network Chucks". I thought it was a great idea for me to gather all my experiences and skills onto a Website that I could show in applications and to employers, and I get to make it look cool.
             <br>
-            <br>As a way to kill time productively and finding a new hobby, I started building this website on the 15th of September. I also chose to build it from scratch rather than using website building tools such as WordPress, because wheres the fun in that?
+            <br>As a way to kill time productively and finding a new hobby, I started building this website on the 15th of September 2024. I also chose to build it from scratch rather than using website building tools such as WordPress, because where's the fun in that?
             <br>
-            <br><img src="images/Projects/website1.jpg" class="website1" alt="websitebuilding">
+            <br><img src="images/project/website1.jpg" class="website1" alt="websitebuilding">
             <br>The code and framework behind the Website can be easily accessed by right-clicking the page and pressing "Inspect" or by pressing F12.
             <span class="heading">How I built it</span>
             Website building is as easy as people make it out. My previous experience with creating Websites was from when I learnt it as part of the National 5 Computing Science curriculum, in where I basically did nothing apart from creating a tiny HTML and CSS file with almost no Javascript.
@@ -57,9 +58,17 @@
             <br>
             <br>My main way of learning was through Youtube, specifically a Youtuber named BroCode. I have a playlist of the majority of videos I used to learn HTML, CSS and JS, shown by clicking below:
             <a href="https://youtube.com/playlist?list=PLAAVP2mzhS4XPp4AgkPwet2GLRi-xWJ_i&si=Qn-YEX4xrbh_j8NM"><br><span id="ImportantPlaylist">Click Here</span></a>
-            In addition, I had to do alot of browsing through GitHub and Stack Overflow comments of people having the same issues I did to trouble shoot problems. I also used websites such as W3Schools and Mdn Web Docs. For tools, I use VSS Code to write everything with HTML, CSS and JS extensions and LiveServer to test the website.
+            <br>In addition, I had to do alot of browsing through GitHub and Stack Overflow comments of people having the same issues I did to trouble shoot problems. I also used websites such as W3Schools and Mdn Web Docs. For tools, I use VSS Code to write everything with HTML, CSS and JS extensions and LiveServer to test the website.
             <br>
             <br>To upload the Website onto the internet, I use GitHub pages and I bought a domain name from Namecheap.com.
+            <span class="heading">Problems while making</span>
+            My biggest problem and headache I had when building this website wasn't actually the coding, but rather uploading it to the internet.
+            <span class="heading">Next Steps</span>
+            My next steps for this website is to definitely implement animations and smooth transitions to make the Website feel more dynamic, I also am trying to clean up the code as I have learnt lots from when I started and some old code resides with the newer, efficient code.
+            <br>
+            <br>This will mean that I will end up changing the layout of the homepage, as most of the old code is there and I think I can do better with the layout of the content.
+            <br>
+            <br>Another thing that I want to work in is better implementation with Icons.
         </p>
 
         <!-- Arduino Section -->
@@ -68,18 +77,723 @@
             burger
         </p>
 
+            <!-- Seven Segment Display Section  -->
+
         <p id="sevensegmentp">
-            the one piece is real
+            In this project I use a 1 digit, 7 segment display and utilize it to create a simple countdown timer.
+            <br><img src="images/project/sevensegment1.jpg" class="sevensegment1" alt="image 1 of circuit">
+            <span class="stylecodebutton"><button onclick="SevenCode()" class="codebutton"><span id="sevencode">Click Here for Code</span></button></span>
+
         </p>
+
+        <p id="fourdigitsevensegmentp">
+            In this project I upgrade from a 1 digit, 7 segment display to a 4 digit, 7 segment display.
+            <br>
+            <br>Circuit is as shown:
+            <img src="images/project/4digit7segment.jpg" class="fourdigitsevensegment1" alt="image 1 of circuit">
+            I used this diagram to assign the Digits and Segments:
+            <img src="images/project/foursevendiagram.jpg" class="fourdigitsevensegment2" alt="diagram of display">
+            <video controls src="images/project/4digitcountdown.mp4" class="fourdigitsevensegmentvid"></video>
+            <br>The clock works by inputting a number between 0 to 9999 into the Serial monitor of the Arduino program. When inputted, the clock will start ticking. Once the clock has reached 0, the active buzzer will start buzzing. 
+            <br>The code is shown below:
+
+            <span class="stylecodebutton"><button onclick="FourSevenCode()" class="codebutton"><span id="foursevencode">Click Here for Code</span></button></span>
+
+            One very noticable thing about the code is the amount of repetitions of 
+            <br>
+            <br><code>sevseg.refreshDisplay();</code> and <code>delay(delayTime);</code>
+            <br>This is due to the guide I was shown using this method although it is inefficient. To better optimise and shorten the code, I used a for loop which is shown between line 67 and 69. 
+            It is also why the repetitions are commented out
+            <br>
+            <br>While making this project, I funnily realised the circuit looked like an explosive device and gave the idea of creating a simulated FAKE bomb. 
+            One that does not blow up but counts down and beeps nervewrackingly and flickers a light.
+            This project is shown in the next tab.
+        </p>
+
+        <pre id="foursevencodep"><code>
+int A = 8;
+int F = 7;
+int B = 6;
+int E = 11;
+int D = 12;
+int DP = 13;
+int C = 10;
+int G = 9;
+int D1 = 2;
+int D2 = 3;
+int D3 = 4;
+int D4 = 5;
+int delayTime = 5;
+int userInput;
+int buzzPin = A4;
+#include "SevSeg.h"
+
+SevSeg sevseg;
+
+void setup() {
+<span class="comment">
+    // put your setup code here, to run once:
+  </span>
+pinMode(A, OUTPUT);
+pinMode(F, OUTPUT);
+pinMode(B, OUTPUT);
+pinMode(E, OUTPUT);
+pinMode(D, OUTPUT);
+pinMode(DP, OUTPUT);
+pinMode(C, OUTPUT);
+pinMode(G, OUTPUT);
+pinMode(D1, OUTPUT);
+pinMode(D2, OUTPUT);
+pinMode(D3, OUTPUT);
+pinMode(D4, OUTPUT);
+
+byte numDigits = 4;
+byte digitPins[] = {D1, D2, D3, D4};
+byte segmentPins[] = {A, B, C, D, E, F, G, DP};
+bool resistorOnSegments= true;
+byte hardwareConfig = COMMON_CATHODE;
+bool updateWithDelays = true;
+bool leadingZeros = false;
+
+sevseg.begin
+(hardwareConfig, numDigits, digitPins, segmentPins,
+ resistorOnSegments, updateWithDelays, leadingZeros);
+
+sevseg.setBrightness(90);
+Serial.begin(9600);
+}
+
+void loop() {
+<span class="comment">
+    // put your main code here, to run repeatedly:
+</span>
+  Serial.println("set a timer up to 9999 seconds");
+  while(Serial.available() == 0){ 
+    
+<span class="comment">
+// while command makes above command only print once until 
+ user inputs number to set up variables</span>
+
+  }
+userInput = Serial.parseInt(); 
+
+<span class="comment">
+// retrieves user input from serial monitor as an integer, not a string</span>
+
+if (userInput <= 9999 && userInput > 0){ // limits input between 0 and 9999
+while(userInput > 0){
+  sevseg.setNumber(userInput);
+
+ for (int i = 0; i <= 200; i++) {
+    sevseg.refreshDisplay();
+    delay(delayTime);  
+  }
+<span class="comment">
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+// sevseg.refreshDisplay();
+// delay(delayTime);  
+</span>
+userInput = userInput - 1;
+sevseg.refreshDisplay();
+
+}
+sevseg.blank();
+analogWrite(A4, 255);
+delay(2000);
+analogWrite(A4, 0);
+}
+else{
+  Serial.println("error, please select between 0 and 9999 seconds");
+}
+}
+
+       </code></pre>
+
+            <!-- End of Seven Segment Display Section  -->
+
+            <!-- Fake Bomb Section  -->
+
+        <p id="fakebombp">
+            In this project, I alter the existing 7 digit alarm clock and turn it into a simulated FAKE bomb prank.
+            <br>
+            <br>The components used are: 5641AS, 220 Ohm resistors, Active Buzzer, Rectifying diode, Red LED.
+            <img src="images/project/fakebomb.jpg" class="fakebomb1" alt="picture of circuit">
+            This project was the first time I went off script from the guide and started coding on my own. While programming, I discovered the
+            <br>
+            <br><code>"do...while"</code>
+            <br>command loop which helped make the project work. 
+            I also used another persons code as inspiration and a sort of backboard for this:
+            <br>
+            <br><a href="https://www.instructables.com/Arduino-Ticking-Time-Bomb/">https://www.instructables.com/Arduino-Ticking-Time-Bomb/</a>
+            <span class="stylecodebutton"><button onclick="FakeBombCode()" class="codebutton"><span id="FakeBombcode">Click Here for Code</span></button></span>
+
+        </p>
+
+        <pre id="fakebombcodep"><code>
+            #include "SevSeg.h"
+
+int A = 8;
+int F = 7;
+int B = 6;
+int E = 11;
+int D = 12;
+int DP = 13;
+int C = 10;
+int G = 9;
+int D1 = 2;
+int D2 = 3;
+int D3 = 4;
+int D4 = 5;
+int delayTime = 5;
+int userInput;
+int buzzPin = A4;
+int j = 0;
+
+SevSeg sevseg;
+
+
+void setup() {
+<span class="comment">
+    // put your setup code here, to run once:
+</span>
+pinMode(A, OUTPUT);
+pinMode(F, OUTPUT);
+pinMode(B, OUTPUT);
+pinMode(E, OUTPUT);
+pinMode(D, OUTPUT);
+pinMode(DP, OUTPUT);
+pinMode(C, OUTPUT);
+pinMode(G, OUTPUT);
+pinMode(D1, OUTPUT);
+pinMode(D2, OUTPUT);
+pinMode(D3, OUTPUT);
+pinMode(D4, OUTPUT);
+
+byte numDigits = 4; // how many digits on timer(4)
+byte digitPins[] = {D1, D2, D3, D4}; // assigning which are digit pins
+byte segmentPins[] = {A, B, C, D, E, F, G, DP}; // assigning which are segment pins 
+bool resistorOnSegments= true; // resistors are put on each segment pin in circuit
+byte hardwareConfig = COMMON_CATHODE; // display is a common cathode
+bool updateWithDelays = true; 
+bool leadingZeros = false;
+
+sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, 
+resistorOnSegments, updateWithDelays, leadingZeros); 
+
+<span class="comment">
+// allowing sevseg to input all info in
+</span>
+
+sevseg.setBrightness(90); 
+Serial.begin(9600); // begin serial monitor 
+
+}
+
+void loop() {
+<span class="comment">
+  // put your main code here, to run repeatedly:
+</span>
+Serial.println("set a timer up to 9999 seconds");
+  while(Serial.available() == 0){ 
+
+<span class="comment">
+// while command makes above command only print once until 
+    user inputs number to set up variables 
+</span>
+  }
+userInput = Serial.parseInt();
+  if (userInput <= 9999 && userInput > 0){
+  while(userInput > 0){
+      sevseg.setNumber(userInput);
+   for (int i = 0; i <= 200; i++) {
+    sevseg.refreshDisplay();
+    delay(delayTime);
+  }
+  analogWrite(A4, 150);
+  delay(20); 
+  analogWrite(A4, 0);
+  delay(970); 
+  userInput = userInput - 1;
+  sevseg.refreshDisplay();
+  }
+  sevseg.blank();
+
+  do {
+    for (int j = 0; j <= 1 ; j++ ) { 
+
+<span class="comment">
+//looping the led to flash over and over again
+</span>
+
+      analogWrite(A5, 255);
+      delay(100);
+      analogWrite(A5, 0);
+      delay(100);
+  }
+    analogWrite(A4, 255);
+    j++;
+  } while (j <= 100);
+
+  analogWrite(A4, 0);
+  analogWrite(A5, 0);
+  }else
+  {
+    Serial.println("error");
+  }
+    
+}
+        </code></pre>
 
         <!-- End of Arduino Section  -->
 
         <p id="emulationp">
             rawr
         </p>
-         </div>
+        
+        </div>
 
 </main>
+
+    <div id="upbutton">
+        <a href="#"><span class="material-symbols-outlined"><span id="uparrow">north</span></a>
+    </div>
 
 <script src="app.js"></script>
 
