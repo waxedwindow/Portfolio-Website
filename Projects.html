@@ -14,7 +14,7 @@
         <a href="index.html" target="_self" title="Back to Home"> 
             <span class="material-symbols-outlined">
                 <span id= "backarrow">arrow_back</span>
-            </span>
+            <!-- </span> -->
             <span class="backp">Back</span>
         </a>
 </span>
@@ -57,7 +57,7 @@
             I was pretty much building this with next to 0 previous knowledge, as the knowledge I did have before was really vague and limited.
             <br>
             <br>My main way of learning was through Youtube, specifically a Youtuber named BroCode. I have a playlist of the majority of videos I used to learn HTML, CSS and JS, shown by clicking below:
-            <a href="https://youtube.com/playlist?list=PLAAVP2mzhS4XPp4AgkPwet2GLRi-xWJ_i&si=Qn-YEX4xrbh_j8NM"><br><span id="ImportantPlaylist">Click Here</span></a>
+            <a href="https://youtube.com/playlist?list=PLAAVP2mzhS4XPp4AgkPwet2GLRi-xWJ_i&si=Qn-YEX4xrbh_j8NM" target="_blank" title="my learning playlist"><br><span id="ImportantPlaylist">Click Here</span></a>
             <br>In addition, I had to do alot of browsing through GitHub and Stack Overflow comments of people having the same issues I did to trouble shoot problems. I also used websites such as W3Schools and Mdn Web Docs. For tools, I use VSS Code to write everything with HTML, CSS and JS extensions and LiveServer to test the website.
             <br>
             <br>To upload the Website onto the internet, I use GitHub pages and I bought a domain name from Namecheap.com.
@@ -103,7 +103,7 @@
             <br>
             <br><code>sevseg.refreshDisplay();</code> and <code>delay(delayTime);</code>
             <br>This is due to the guide I was shown using this method although it is inefficient. To better optimise and shorten the code, I used a for loop which is shown between line 67 and 69. 
-            It is also why the repetitions are commented out
+            It is also why the repetitions are commented out.
             <br>
             <br>While making this project, I funnily realised the circuit looked like an explosive device and gave the idea of creating a simulated FAKE bomb. 
             One that does not blow up but counts down and beeps nervewrackingly and flickers a light.
@@ -655,6 +655,7 @@ else{
             <br>
             <br>The components used are: 5641AS, 220 Ohm resistors, Active Buzzer, Rectifying diode, Red LED.
             <img src="images/project/fakebomb.jpg" class="fakebomb1" alt="picture of circuit">
+            <video controls src="images/project/fakebombvid.mp4" class="fakebombvid" alt="demonstration"></video>
             This project was the first time I went off script from the guide and started coding on my own. While programming, I discovered the
             <br>
             <br><code>"do...while"</code>
@@ -663,11 +664,12 @@ else{
             <br>
             <br><a href="https://www.instructables.com/Arduino-Ticking-Time-Bomb/">https://www.instructables.com/Arduino-Ticking-Time-Bomb/</a>
             <span class="stylecodebutton"><button onclick="FakeBombCode()" class="codebutton"><span id="FakeBombcode">Click Here for Code</span></button></span>
+            This project is most definitely not perfect and I'm not completely happy with the result. This was just a way for me to test my current knowledge. One issue that I need to learn is how to do 2 different actions simultaneously, such as having the buzzer play while the timer goes down. I intend to return to this project
 
         </p>
 
         <pre id="fakebombcodep"><code>
-            #include "SevSeg.h"
+#include "SevSeg.h"
 
 int A = 8;
 int F = 7;
@@ -784,7 +786,31 @@ userInput = Serial.parseInt();
         <!-- End of Arduino Section  -->
 
         <p id="emulationp">
-            rawr
+            The goal of this project was to repurpose my old Samsung S10 into an emulation console. The idea was to utilise Samsung DeX, which is a mode the phone can go when connected to a screen that turns the OS into a Computer format.
+            <img src="images/project/s10.jpg" class="s10" alt="picture of my old phone">
+            I used this phone for a solid 4 years and the battery was showing it's age, by losing a percentage of charge every 2 minutes, so I decided on first doing a battery replacement.
+            <br>
+            <br>The repair was much easier to do than usual as the back glass of the phone was almost about to fall apart. However, I still had to order a heatgun to heat up the glue of the battery.
+            I ordered a battery from eBay and a replacement back glass from AliExpress. The heat gun was ordered from Amazon.
+            <br>
+            <br>I first started by shutting off the phone, taking out the SIM tray and slowly peeled off the back glass and unscrewing the plastic covers. With the heat gun, I peeled off remaining residue and was able to access all the components in the phone.
+            Then I disconnected the battery by taking off the lego connector for the ribbon cable using a plastic ridge. Using the heat gun, I heated up the glue sticking the battery onto the body by aiming it at the screen, because aiming a heat gun at a battery is a recipe for disaster.
+            <br>
+            <br>I had problems while actually removing the battery, as the glue was still very sticky and there was barely any space to put leverage on the battery. I was scared that I would puncture the battery with the tweezers and all the plastic ridges I had would simply bend while taking the battery out. 
+            I eventually used a plastic spatula used for camping and that did the trick.
+            <img src="images/project/phonerepair1.jpg" class="phonerepair1" alt="picture 1 of repair">
+            <img src="images/project/phonerepair2.jpg" class="phonerepair2 alt picture 2 of repair">
+            After taking out the battery, I simply stuck the new one in using electronic double sided tape and closed everything up. After dusting the insides, I installed the back glass which was transparent as I like seeing into electronics.
+            <br>
+            <br>After the repair, I installed emulation apps such as Lemuroid, MelonDS and others. With this, I was able to play childhood games such as Spongebob Truth or Square and GTA Vice City.
+            <img src="images/project/repairedphone.jpg" class="repairedphone" alt="picture of repaired phone">
+            <span class="heading">Problems</span>
+            As a first repair, it most definitely wasn't perfect. At first, I wanted to reuse the original backglass but peel back the white coating to turn it transparent. However, I applied too much pressure onto the tempered glass and it shattered everywhere, cutting my finger and leaving a scar. This taught me to be careful no matter what and use as least amount of force when it comes to fragile items.
+            <br>
+            <br>There is also another issue with the installation of the new back glass. When installing it, there was not enough weight acting on the glass while the glue settled which meant that it wasn't setted in perfectly. It now has sharp edges and there is an air gap in the middle of the phone, however seeing that this phone would be barely held I didn't see this as much of an issue.
+            <span class="heading">Next Steps</span>
+            I definitely am planning on returning back to this project. I really want to get controller attachments so I can use the phone like an actual console device, like a Nintendo Switch or DS. As of now, I currently use the phone as a mini cloud storage as it has 512GB storage.
+
         </p>
         
         </div>

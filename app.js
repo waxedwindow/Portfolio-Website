@@ -4,8 +4,15 @@
 let baesection = document.getElementById("BAEp")
 let enusection = document.getElementById("ENUp")
 
+  // Cadet Section 
 let cadetsubbutton = document.getElementById("cadet")
 let displayc = 1
+  // End of Cadet Section 
+
+  // Dofe Section 
+let dofesubbutton = document.getElementById("dofe")
+let displayd = 1
+  // Dofe Section 
 
 function BAEE(){
   baesection.style.display = "flex"
@@ -26,12 +33,23 @@ function Cadet(){
   }
 
 }
+function DofE(){
+  if (displayd == 1)
+  {dofesubbutton.style.display = "flex"
+    displayd = 0
+  }
+  else{
+    dofesubbutton.style.display =  "none"
+    displayd = 1
+  }
+
+}
 
 
 // Project Page
 let websitesection = document.getElementById("Websitep")
 
-// Arduino Section 
+  // Arduino Section 
 let arduinosubbutton = document.getElementById("arduinos")
 let arduinostartsection  = document.getElementById("ArduinoStart")
 let sevensegmentsection = document.getElementById("sevensegmentp")
@@ -43,7 +61,7 @@ let fakebombsection = document.getElementById("fakebombp")
 let fakebombcodesection = document.getElementById("fakebombcodep")
 
 let displaya = 1
-// End of Arduino Section 
+  // End of Arduino Section 
 
 let emulatesection = document.getElementById("emulationp")
 

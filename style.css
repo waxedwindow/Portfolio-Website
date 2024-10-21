@@ -389,7 +389,7 @@ a{
 #backarrow{
     font-size: 2rem;
     position: absolute;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 .backp{
     position: relative;
@@ -477,6 +477,7 @@ a{
     padding: 0.5rem;
     font-family: "Dela Gothic One";
     font-size: 1.5rem;
+    transition: bottom 0.5s ease;
 }
 .navsubutton button:hover{
     background-color: rgb(50, 50, 50);
@@ -493,8 +494,15 @@ a{
     width: 90%;
     margin-left: 5%;
 }
-
-
+#dofe{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
 .thecooldrone{
     padding: 1.2rem;
     height: 400px;
@@ -647,10 +655,25 @@ a{
     align-self: center;
     object-fit: contain;  
 }
-#CadetExperiencesp{
+#CadetFirstAidp{
     display: none;
 }
-#CadetAchievementsp{
+#CadetPromotionp{
+    display: none;
+}
+#CadetShootingp{
+    display: none;
+}
+#CadetRememberancep{
+    display: none;
+}
+#CadetShopkeepingp{
+    display: none;
+}
+#DofEBronzep{
+    display: none;
+}
+#DofESilverp{
     display: none;
 }
 
@@ -765,7 +788,52 @@ a{
     align-self: center;
     object-fit: contain;   
 }
+.fakebombvid{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
 /* End of Arduino Section  */
 #emulationp{
     display: none;
+}
+.s10{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.phonerepair1{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
+.phonerepair2{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
+.repairedphone{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
 }
