@@ -706,7 +706,31 @@ a{
 #Websitep{
     display: flex;
 }
-#ImportantPlaylist{
+#ArduinoStart{
+    display: none;
+}
+#sevensegmentp{
+    display: none;
+}
+#fourdigitsevensegmentp{
+    display: none;
+}
+#foursevencodep{
+    display: none;
+}
+#fakebombp{
+    display: none;
+}
+#fakebombcodep{
+    display: none;
+}
+#emulationp{
+    display: none;
+}
+#computerbuildingp{
+    display: none;
+}
+.ImportantPlaylist{
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -733,11 +757,32 @@ a{
     width: 90%;
     margin-left: 5%;
 }
-#ArduinoStart{
-    display: none;
+
+.arduinobeginningvid{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
 }
-#sevensegmentp{
-    display: none;
+.blownled{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.ArduinoStartFile{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    color: #bd73fa;
+    font-size: 1.2rem;
 }
 .sevensegment1{
     height: 600px;
@@ -746,11 +791,12 @@ a{
     align-self: center;
     object-fit: contain;  
 }
-#foursevencodep{
-    display: none;
-}
-#fourdigitsevensegmentp{
-    display: none;
+.sevensegmentvid{
+    height: 600px;
+    width: 800px;
+    padding: 1rem;
+    align-self: center;
+    object-fit: contain;  
 }
 .fourdigitsevensegment1{
     height: 500px;
@@ -773,12 +819,6 @@ a{
     align-self: center;
     object-fit: contain;   
 }
-#fakebombp{
-    display: none;
-}
-#fakebombcodep{
-    display: none;
-}
 .fakebomb1{
     height: 700px;
     width: 800px;
@@ -798,9 +838,6 @@ a{
     object-fit: contain;   
 }
 /* End of Arduino Section  */
-#emulationp{
-    display: none;
-}
 .s10{
     height: 600px;
     width: 800px;
@@ -836,4 +873,138 @@ a{
     /* padding: 1rem; */
     align-self: center;
     object-fit: contain;   
+}
+.motherboardassembly{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;    
+}
+.pc2{
+    height: 800px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;    
+}
+.pc1{
+    height: 800px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;    
+}
+.ak620{
+    height: 800px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;    
+}
+.cpureplace{
+    height: 800px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;    
+}
+.pc3{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
+.pc4{
+    height: 700px;
+    width: 800px;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.pc5{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.pc6{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.adicomputer1{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.adicomputervid{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.nathancomputer1{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.nathancomputer2{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.nathancomputer3{
+    height: 700px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.nathancomputer4{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
 }

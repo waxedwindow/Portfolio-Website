@@ -39,6 +39,8 @@
                         </div>
                         
                         <li><button onclick="Emulate()" class="navbutton"><div id="Emulate">Emulation Console</div></button></li>
+                        <li><button onclick="ComputerBuild()" class="navbutton"><div id="ComputerBuild">PC Building</div></button></li>
+                        <li><button onclick="Server()" class="navbutton"><div id="Server">Refurbished PC</div></button></li>
                     
                     </ul>
                 </nav>
@@ -74,7 +76,17 @@
         <!-- Arduino Section -->
 
         <p id="ArduinoStart">
-            burger
+            I started playing with Arduinos by getting an ELEGOO Super Starter Kit as a gift. I began by initally creating really simple circuits that didn't require code, such as a simple LED bulb connected by a button.
+            <br>
+            <br>In this video, I was showing my friend the circuit and explaining how a breadboard worked (something that I learnt minutes before making the video) 
+            <video controls src="images/project/arduinobeginningvid.mp4" class="arduinobeginningvid"></video>
+            To actually start learning how to code the Arduino and the C++ language, I referred to a tutorial supplied by freeCodeCamp.com on Youtube. The video is in my learning playlist which can be found by clicking below.
+            <a href="https://youtube.com/playlist?list=PLAAVP2mzhS4XPp4AgkPwet2GLRi-xWJ_i&si=Qn-YEX4xrbh_j8NM" target="_blank" title="my learning playlist"><br><span class="ImportantPlaylist">Click Here</span></a> 
+            While learning, I had some failures such as accidentally blowing up an LED while testing out how a thermistor works. I forgot to add another regular resistor to make it into a potential divider and relied on the thermistors own resistance to protect the LED, which wasn't enough.
+            <img src="images/project/blownled.jpg" class="blownled" alt="blownled">
+            A link to all the files I used to start off are shared here.
+            <a href="https://drive.google.com/drive/folders/1Dx056d3z4eJo4sm06oKyGLrqc4BZUmq-?usp=sharing" target="_blank" title="arduino file"><br><span class="ArduinoStartFile">https://drive.google.com/drive/folders/1Dx056d3z4eJo4sm06oKyGLrqc4BZUmq-?usp=sharing</span></a>
+
         </p>
 
             <!-- Seven Segment Display Section  -->
@@ -82,6 +94,7 @@
         <p id="sevensegmentp">
             In this project I use a 1 digit, 7 segment display and utilize it to create a simple countdown timer.
             <br><img src="images/project/sevensegment1.jpg" class="sevensegment1" alt="image 1 of circuit">
+            <video controls src="images/project/1digitcountdown.mp4" class="sevensegmentvid" alt="video of countdown"></video>
             <span class="stylecodebutton"><button onclick="SevenCode()" class="codebutton"><span id="sevencode">Click Here for Code</span></button></span>
 
         </p>
@@ -708,11 +721,11 @@ pinMode(D2, OUTPUT);
 pinMode(D3, OUTPUT);
 pinMode(D4, OUTPUT);
 
-byte numDigits = 4; // how many digits on timer(4)
-byte digitPins[] = {D1, D2, D3, D4}; // assigning which are digit pins
-byte segmentPins[] = {A, B, C, D, E, F, G, DP}; // assigning which are segment pins 
-bool resistorOnSegments= true; // resistors are put on each segment pin in circuit
-byte hardwareConfig = COMMON_CATHODE; // display is a common cathode
+byte numDigits = 4; <span class="comment">// how many digits on timer(4)</span>
+byte digitPins[] = {D1, D2, D3, D4}; <span class="comment">// assigning which are digit pins</span>
+byte segmentPins[] = {A, B, C, D, E, F, G, DP}; <span class="comment">// assigning which are segment pins</span> 
+bool resistorOnSegments= true; <span class="comment">// resistors are put on each segment pin in circuit</span>
+byte hardwareConfig = COMMON_CATHODE; <span class="comment">// display is a common cathode</span>
 bool updateWithDelays = true; 
 bool leadingZeros = false;
 
@@ -811,6 +824,67 @@ userInput = Serial.parseInt();
             <span class="heading">Next Steps</span>
             I definitely am planning on returning back to this project. I really want to get controller attachments so I can use the phone like an actual console device, like a Nintendo Switch or DS. As of now, I currently use the phone as a mini cloud storage as it has 512GB storage.
 
+        </p>
+
+        <p id="computerbuildingp">
+          One smaller hobby I occasionally do is PC Building. I've always loved tinkering and playing with computers and I have built 3 computers, troubleshooting and fixed many other ones, and will continue to for the future.
+          <span class="heading">Personal Build</span>
+          As a reward for getting all As in my National 5s, I was told that I could get a PC so I started learning and designing my personal computer. I chose to build it rather than a PreBuilt because I've always wanted to build one and it has practical use in the way I can fully control what I buy and be as cost effective as possible.
+          <img src="images/project/PC Building/motherboardassembly.jpg" class="motherboardassembly" alt="motherboard assembly">
+          <img src="images/project/PC Building/pc2.jpg" class="pc2" alt="PC bootup">
+          <img src="images/project/PC Building/pc1.jpg" class="pc1" alt="PC">
+           <span class="heading">Specs</span>
+           <br>- AMD Ryzen 5 5600x (with included CPU Cooler)
+           <br>- ASUS ROG Strix B550-A Gaming
+           <br>- Kingston FURY Beast 16GB DDR4-3200 CL16
+           <br>- WD Blue SN570 1TB
+           <br>- AMD XFX Speedster SWFT 319 Radeon RX 6800 16 GB 
+           <br>- Fractal Design Pop Air ATX
+           <br>- SeaSonic B12 BC 850W
+           <br>
+           <br>I still had alot of things planned for this computer, as I decided that I would buy all the main stuff and slowly upgrade it overtime. This computer was a powerhouse but was a bit loud due to the fact it had the stock CPU cooler which meant I couldn't overclock it and on load, it would roar loudly.
+           <br>
+           <br>I eventually settled with an air cooler, specifically the DeepCool AK620
+           <img src="images/project/PC Building/ak620.jpg" class="ak620" alt="cpucoolerpackaging">
+           I replaced the old stock cooler with this one and experienced a massive increase in power and decrease in sound coming from the fans.
+           <video controls src="images/project/PC Building/cpureplacement.mp4" class="cpureplace" alt="cpu replacement"></video>
+           I was still unsatisfied by the volume and the look of the fans at the front of the PC, so I replaced the 2 120mm intake fans with 140mm ones. I then moved the original intakes onto the top as exhausts. With some fine tuning I was still able to get positive pressure air pumping through the PC.
+           <br>
+           <br>
+           <span class="heading">Before</span>
+           <img src="images/project/PC Building/pc3.jpg" class="pc3" alt="Before1">
+           <img src="images/project/PC Building/pc4.jpg" class="pc4" alt="Before2">
+           <span class="heading">After</span>
+           <img src="images/project/PC Building/5.jpg" class="pc5" alt="After1">
+           <img src="images/project/PC Building/6.jpg" class="pc6" alt="After2">
+           <span class="heading">Nathan's Computer</span>
+           This PC build was dedicated to my friend Nathan who was switching from Console Gaming to PC Gaming.
+           <img src="images/project/PC Building/nathancomputer1.jpg" class="nathancomputer1" alt="picture of nathan's computer">
+           <img src="images/project/PC Building/nathancomputer2.jpg" class="nathancomputer2" alt="picture2 of nathan's computer">
+           <img src="images/project/PC Building/nathancomputer3.jpg" class="nathancomputer3" alt="picture3 of nathan's computer">
+           <img src="images/project/PC Building/nathancomputer4.jpg" class="nathancomputer4" alt="picture4 of nathan's computer">
+           <span class="heading">Specs</span>
+           <br>- AMD Ryzen 5 7600 3.8 GHz 6-Core Processor
+           <br>- Asus ROG STRIX B650-A GAMING WIFI ATX AM5 Motherboard
+           <br>- G.Skill Ripjaws S5 32 GB (2 x 16 GB) DDR5-5600 CL28 Memory
+           <br>- Western Digital Blue SN570 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive
+           <br>- Sapphire PURE Radeon RX 7800 XT 16 GB Video Card
+           <br>- Corsair 4000D Airflow ATX Mid Tower Case
+           <br>- SeaSonic B12 BC 750 W 80+ Bronze Certified ATX Power Supply
+           <span class="heading">Adrian's Computer</span>
+           This PC build was dedicated to my friend Adrian who was also switching from Console to PC.
+           <img src="images/project/PC Building/adicomputer1.jpg" class="adicomputer1" alt="picture of adrian's computer">
+           <span class="heading">Specs</span>
+           <br>- AMD Ryzen 5 5600x (with included CPU Cooler)
+           <br>- MSI MPG B550 GAMING PLUS ATX AM4
+           <br>- Corsair Vengeance RGB Pro 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory
+           <br>- KIOXIA EXCERIA G2 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive
+           <br>- ASRock Challenger OC Radeon RX 7700 XT 12 GB Video Card
+           <br>- KOLINK Observatory MX Mesh ARGB ATX Mid Tower Case
+           <br>	 Corsair CV650 650 W 80+ Bronze Certified ATX Power Supply
+           <br>- Asus PCE-AX3000 802.11a/b/g/n/ac/ax PCIe x1 Wi-Fi Adapter
+           <video controls src="images/project/PC Building/adicomputervid.mp4" class="adicomputervid"></video>
+           Note: We didn't actually use cellotape to move a power cable, that would just be bad.
         </p>
         
         </div>

@@ -64,6 +64,7 @@ let displaya = 1
   // End of Arduino Section 
 
 let emulatesection = document.getElementById("emulationp")
+let computersection = document.getElementById("computerbuildingp")
 
 
 function Website(){
@@ -75,6 +76,7 @@ function Website(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 
 // Arduino 
@@ -98,6 +100,7 @@ function ArduinoBeginning(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 function SevenSegment(){
   websitesection.style.display = "none"
@@ -108,6 +111,7 @@ function SevenSegment(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 function FourSevenSegment(){
   websitesection.style.display = "none"
@@ -118,6 +122,7 @@ function FourSevenSegment(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 function FourSevenCode(){
   websitesection.style.display = "none"
@@ -128,6 +133,7 @@ function FourSevenCode(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 function FakeBomb(){
   websitesection.style.display = "none"
@@ -138,6 +144,7 @@ function FakeBomb(){
   fakebombsection.style.display = "flex"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "none"
+  computersection.style.display = "none"
 }
 function FakeBombCode(){
   websitesection.style.display = "none"
@@ -148,6 +155,7 @@ function FakeBombCode(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "flex"
   emulatesection.style.display = "none" 
+  computersection.style.display = "none"
 }
 // End of Arduino 
 function Emulate(){
@@ -159,6 +167,18 @@ function Emulate(){
   fakebombsection.style.display = "none"
   fakebombcodesection.style.display = "none"
   emulatesection.style.display = "flex"
+  computersection.style.display = "none"
+}
+function ComputerBuild(){
+  websitesection.style.display = "none"
+  arduinostartsection.style.display = "none"
+  sevensegmentsection.style.display = "none"
+  fourdigitsevensegmentsection.style.display = "none"
+  foursevencodesection.style.display = "none"
+  fakebombsection.style.display = "none"
+  fakebombcodesection.style.display = "none"
+  emulatesection.style.display = "none"
+  computersection.style.display = "flex"
 }
 
 
