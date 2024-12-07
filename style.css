@@ -89,7 +89,15 @@ a{
     text-align: center;
     padding: 1rem;
 }
-
+#iconpicture{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    font-family: "Dela Gothic One";
+    text-align: center;
+    padding: 1rem;
+}
 .profile{
     height: 600px;
     width: 1410px;
