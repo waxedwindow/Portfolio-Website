@@ -401,11 +401,32 @@ a{
 
 #BAEp{
     display: flex;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease-in; */
 }
 #ENUp{
     display: none;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease-in; */
+}
+#CadetFirstAidp{
+    display: none;
+}
+#CadetPromotionp{
+    display: none;
+}
+#CadetShootingp{
+    display: none;
+}
+#CadetRememberancep{
+    display: none;
+}
+#CadetShopkeepingp{
+    display: none;
+}
+#DofEBronzep{
+    display: none;
+}
+#DofESilverp{
+    display: none;
 }
 
 .bodybox{
@@ -485,6 +506,8 @@ a{
     cursor: pointer;
     transition: 0.5s ease;
 }
+
+/* Start of Cadet Section   */
 #cadet{
     display: none;
     justify-content: center;
@@ -494,6 +517,96 @@ a{
     width: 90%;
     margin-left: 5%;
 }
+.firstaidcertifcate{
+    padding: 1.2rem;
+    height: 800px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.firstaid1{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.firstaid2{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.firstaid3{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain;
+}
+.firstaidbadge{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadetpromotion{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadet1star{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadetshootingbadge1{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.almostcompletecadetpatch{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadetshooting1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 600px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadetshooting2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 800px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+.cadetshootingvid{
+    padding: 1.2rem;
+    height: 700px;
+    width: 800px;
+    align-self: center;
+    object-fit: contain; 
+}
+/* End of Cadet Section   */
+
+/* Start of DofE Section   */
 #dofe{
     display: none;
     justify-content: center;
@@ -655,31 +768,6 @@ a{
     align-self: center;
     object-fit: contain;  
 }
-#CadetFirstAidp{
-    display: none;
-}
-#CadetPromotionp{
-    display: none;
-}
-#CadetShootingp{
-    display: none;
-}
-#CadetRememberancep{
-    display: none;
-}
-#CadetShopkeepingp{
-    display: none;
-}
-#DofEBronzep{
-    display: none;
-}
-#DofESilverp{
-    display: none;
-}
-
-
-
-
 
 /* Projects Tab */
 .codebutton{
@@ -727,7 +815,13 @@ a{
 #emulationp{
     display: none;
 }
+#personal3dsp{
+    display: none;
+}
 #computerbuildingp{
+    display: none;
+}
+#upcomingideap{
     display: none;
 }
 .ImportantPlaylist{
@@ -787,14 +881,18 @@ a{
 .sevensegment1{
     height: 600px;
     width: 800px;
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
     align-self: center;
     object-fit: contain;  
 }
 .sevensegmentvid{
     height: 600px;
     width: 800px;
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
     align-self: center;
     object-fit: contain;  
 }
@@ -866,6 +964,15 @@ a{
     object-fit: contain;   
 }
 .repairedphone{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;   
+}
+.personal3ds1{
     height: 600px;
     width: 800px;
     margin-top: 1rem;
@@ -954,6 +1061,24 @@ a{
     align-self: center;
     object-fit: contain;  
 }
+.finalpc1{
+    height: 700px;
+    width: 800px;
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+.finalpc2{
+    height: 700px;
+    width: 800px;
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
 .adicomputer1{
     height: 700px;
     width: 800px;
@@ -1000,6 +1125,17 @@ a{
     object-fit: contain;  
 }
 .nathancomputer4{
+    height: 600px;
+    width: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    align-self: center;
+    object-fit: contain;  
+}
+
+/* Upcoming Idea Section  */
+.old3ds1{
     height: 600px;
     width: 800px;
     margin-top: 1rem;
