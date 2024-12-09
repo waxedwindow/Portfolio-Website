@@ -406,7 +406,9 @@ a{
 }
 
 /* Experience Tab */
-
+#Jobp{
+    display: none;
+}
 #BAEp{
     display: flex;
     /* transition: 0.5s ease-in; */
@@ -600,14 +602,14 @@ a{
 .cadetshooting2{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 800px;
+    height: 500px;
     width: 800px;
     align-self: center;
-    object-fit: contain; 
+    object-fit: cover; 
 }
 .cadetshootingvid{
     padding: 1.2rem;
-    height: 700px;
+    height: 400px;
     width: 800px;
     align-self: center;
     object-fit: contain; 

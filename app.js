@@ -1,6 +1,7 @@
 
 
 //Experience Page
+let jobsection = document.getElementById("Jobp")
 let baesection = document.getElementById("BAEp")
 let enusection = document.getElementById("ENUp")
 
