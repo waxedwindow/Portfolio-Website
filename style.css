@@ -11,7 +11,7 @@ body{
     background:linear-gradient(#bd73fa, black);
     padding: 1rem;
     background-attachment: center;
-    background-image: url("images/back.jpg");
+    background-image: url("images/framework/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
