@@ -1,0 +1,229 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 1%;
+    padding: 0%;
+    padding-bottom: 2%;
+}
+body {
+  margin: 0;
+  min-height: 100vh; /* Ensures the background covers the full screen height */
+  background: linear-gradient(to bottom, #ffdfbd, #e9e9e9);
+  background-attachment: fixed; /* Prevents background tiling when scrolling */
+  height: 3000px;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.myheader {
+  font-family: "Alata", sans-serif;
+  font-size: clamp(3rem, 10vw, 10rem); 
+  white-space: nowrap;
+}
+
+#portrait{
+  display: flex;
+  width: 30%; 
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.words {
+  font-size: 3rem; 
+  font-family: "Alata", sans-serif;
+  white-space: nowrap;
+}
+
+.morewords {
+  font-size: 3rem; 
+  font-family: "Alata", sans-serif;
+  white-space: nowrap;
+  color: white;
+}
+
+.socials{
+  display: inline-flex;
+
+}
+
+#CV {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 2rem 6rem;
+  width: 30%;
+  height: auto;
+  background-color: rgb(34, 34, 34);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5rem;
+  font-family: "Alata", sans-serif;
+  font-size: 5rem;
+  white-space: nowrap;
+  /* margin-top: 15px; */
+}
+
+.cv-icon {
+  width: 8rem;
+  height: auto;
+  fill: #ffffff;
+  padding: 3rem;
+}
+.linkedin-icon{
+    width: 8rem;
+  height: 8rem;
+  /* fill: #ffffff; */
+  padding: 3rem;
+}
+.email-icon{
+  width: 8rem;
+  height: 8rem;
+  fill: #000000;
+  padding: 3rem;
+}
+.phone-icon{
+  width: 8rem;
+  height: 8rem;
+  fill: #000000;
+  padding: 3rem;
+}
+
+/* SLIDESHOW */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers arrows vertically */
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+  transition: 0.3s ease;
+  border-radius: 0 5px 5px 0;
+}
+s
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.backend{
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  height: 50%;
+  border-radius: 5rem;
+  padding: 2rem 4rem;
+}
+
+/* Position left arrow */
+.prev {
+  left: 1rem;
+}
+
+/* Position right arrow */
+.next {
+  right: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.myportfolio {
+  font-family: "Alata", sans-serif;
+  font-size: clamp(3rem, 10vw, 10rem); 
+  white-space: nowrap;
+  justify-self: right;
+color: #fcebd2; 
+  mix-blend-mode: screen; 
+}
+
+.mySlides {
+  display: none;
+  flex-direction:row;
+  align-items: flex-start; 
+}
+
+.mySlides p.words {
+  align-self: center;
+  white-space: normal;       
+  flex: 1;                
+  color: #ffffff;            
+}
+
+#isometric{
+  width: 40%;
+  align-self: center;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
+}
+
+#ort{
+  width: 50%;
+  align-self: center;  
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
+}
+
+#bae{
+  width: 40%;
+  align-self: center;  
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
+}
