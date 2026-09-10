@@ -3,1154 +3,230 @@ html{
 }
 
 *{
-    margin: 0%;
+    margin: 1%;
     padding: 0%;
+    padding-bottom: 2%;
+}
+body {
+  margin: 0;
+  min-height: 100vh; /* Ensures the background covers the full screen height */
+  background: linear-gradient(to bottom, #ffdfbd, #e9e9e9);
+  background-attachment: fixed; /* Prevents background tiling when scrolling */
+  height: 3000px;
 }
 
-body{
-    background:linear-gradient(#bd73fa, black);
-    padding: 1rem;
-    background-attachment: center;
-    background-image: url("images/framework/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    /* border: 1px solid; */
-    padding-left: 25%;
-    padding-right: 25%;
-}
-h1{
-    color: white;
-    font-family:"Dela Gothic One", sans-serif;
-    text-align: center;
-    position: static;
-    padding: 40px;
-}
-h2{
-    color: white;
-    font-family:"Dela Gothic One", sans-serif;
-    position: relative;
-    text-align: center;
-}
-h3{
-    color: white;
-    font-weight: bold;
-    font-family: "Dela Gothic One", sans-serif;
-    text-align: center;
-}
-p{
-    display: flex;
-    flex-direction: column;
-    float: right;
-    background-color: rgb(50, 50, 50);
-    border-top-right-radius: 10px ;
-    border-bottom-right-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    font-family: "Comfortaa", sans-serif;
-    color: white;
-    font-size: 1.1rem;
-    width: 60%;
-    /* min-width: 1400px; */
-}
-pre{
-    display: flex;
-    flex-direction: column;
-    float: right;
-    background-color: rgb(50, 50, 50);
-    border-top-right-radius: 10px ;
-    border-bottom-right-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    font-family: "Comfortaa", sans-serif;
-    color: white;
-    font-size: 1.1rem;
-    width: 60%;
-}
-a{
-    text-decoration: none;
-    color: white;
-    display: inline;
-    align-self: center; 
-    justify-content: center;
-}
-.heading{
-    display: flex;
-    align-self: center;
-    font-size: 1.5rem;
-    font-family: "Dela Gothic One";
-    text-align: center;
-    padding: 1rem;
-}
-#iconpicture{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    font-size: 1rem;
-    font-family: "Dela Gothic One";
-    text-align: center;
-    padding: 1rem;
-}
-.profile{
-    height: 600px;
-    width: 1410px;
-    display: flex;
-    border: 1px solid;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
-    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    padding: 1rem;
-}
-#profile-p1{
-    align-self: center;
-}
-.profileimage{
-    border-color: white;
-    border-radius: 10px;
-    float: right; 
-    position:static;  
-}
-.p1{
-    color: white;
-    font-weight: bold;
-    font-family: "Comfortaa", sans-serif;
-    text-align: left;
-    font-size: 1.2rem;
-    border: 10px solid;
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    height: 500px;
-    width: 810px;
-    border-radius: 10px;
-}
-.p2{
-    color: white;
-    font-weight: bold;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 1.2rem;
-    text-align: left;
-    border: 10px solid;
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    height: 295px;
-    width: 700px;
-    border-radius: 10px;
-    float: right;
-    align-self: center;
-}
-.p3{
-    color: white;
-    font-weight: bold;
-    font-family: "Comfortaa", sans-serif;
-    text-align: left;
-    font-size: 1.2rem;
-    border: 10px solid;
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    height: 295px;
-    width: 810px;
-    border-radius: 10px;
-    align-self: center;
-}
-.p4{
-    color: white;
-    font-weight: bold;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 1.2rem;
-    text-align: left;
-    border: 10px solid;
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    height: 310px;
-    width: 700px;
-    border-radius: 10px;
-    float: right;
-    align-self: center;
-}
-.guitar{
-    height: 620px;
-    width: 1410px;
-    padding: 1rem;
-    display: flex;
-    border: 1px solid;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
-    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
-    justify-content: space-between;
-}
-#guitar-p2{
-    align-self: center;
-}
-.bassguitarimage{
-    height: 295px;
-    width: 300px;
-    object-fit: cover;
-    /* border-style: solid; */
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    float: left; 
-    position:absolute;  
-
-}
-.guitarvid{
-    object-fit: cover;
-    object-position: 0%, -20%;
-    height: 400px;
-    width: 300px;
-    /* border: 5px solid; */
-    border-color: white;
-    border-radius: 10px;
-    position: absolute;
-    margin-left: 320px;
-}
-.guitarimage1{
-    height: 305px;
-    width: 300px;
-    object-fit:cover;
-    object-position: 0% 50%;
-    /* border-style: solid; */
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 315px;
-}
-.guitarimage2{
-    height: 200px;
-    width: 300px;
-    object-fit:cover;
-    object-position: 0% 75%;
-    /* border-style: solid; */
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 420px;
-    margin-left: 320px;
-}
-.cadets{
-    height: 610px;
-    width: 1410px;
-    padding: 1rem;
-    display: flex;
-    border: 1px solid;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
-    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-#cadets-p3{
-    align-self: center;
+a {
+  color: inherit; /* or color: #000000; */
+  text-decoration: none;
 }
 
-.cadetimage1{
-    height: 600px;
-    width: 400px;
-    /* border-style: solid; */
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-.planes{
-    height: 620px;
-    width: 1410px;
-    padding: 1rem;
-    display: flex;
-    border: 1px solid;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
-    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
-    justify-content: space-between;
-    column-gap: 10px;
-}
-#planes-p4{
-    align-self: center;
-}
-.plane1{
-    height: 250px;
-    width: 300px;
-    object-fit: cover; 
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 20px;
-}
-.plane2{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 285px;
-}
-.plane3{
-    height: 300px;
-    width: 225px;
-    object-fit: cover;
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 285px;
-    margin-left: 320px;
-}
-.starry1{
-    height: 250px;
-    width: 225px;
-    object-fit: cover;
-    border-color: white;
-    border-width: 5px;
-    border-radius: 10px;
-    position: absolute;
-    margin-left: 320px;
-    margin-top: 20px;
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Main Navigation Bar  */
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navigation ul{
-    list-style-type: none;
-    background-color: rgb(50, 50, 50);
-    border-radius: 50px;
-    border-width: 50px;
-    padding: 15px;
-    font-family: "Dela Gothic One";
-    overflow: hidden;
-}
-.navigation a{
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-}
-.navigation a:hover{
-    background-color: rgb(31, 31, 31);
-    border-radius: 50px;
-    border-width: 50px;
-}
-.navigation li{
-    display: inline-block;
-    text-align: center;
-    font-size: 1.2rem;
-}
-/* End of Main Navigation Bar  */
-
-#backbutton{
-    position: absolute;
-    background-color: rgb(31, 31, 31);
-    border-radius: 50px;
-    border-width: 50px;
-    color: white;
-    padding: 1.5rem;
-    font-family: "Dela Gothic One";
-    font-size: 2rem;
-}
-#upbutton{
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    color: white;
-    margin-top: 2rem;
-}
-#upbutton a:hover{
-    transition: 0.3s ease;
-}
-#uparrow{
-    font-size: 3rem;
+.headline {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 2%;
 }
 
-.material-symbols-outlined{
-    height: 1.5rem;
-    display: flex;
-    align-self: center;
-}
-#backarrow{
-    font-size: 2rem;
-    position: absolute;
-    /* padding-bottom: 1rem; */
-}
-.backp{
-    position: relative;
-    margin-left: 2.5rem;
-    margin-top: 0.2rem;
+.myheader {
+  font-family: "Alata", sans-serif;
+  font-size: clamp(3rem, 10vw, 10rem); /* Minimum 2.5rem, maximum 6rem */
+  white-space: nowrap;
 }
 
-/* Experience Tab */
-#Jobp{
-    display: none;
-}
-#BAEp{
-    display: flex;
-    /* transition: 0.5s ease-in; */
-}
-#ENUp{
-    display: none;
-    /* transition: 0.5s ease-in; */
-}
-#CadetFirstAidp{
-    display: none;
-}
-#CadetPromotionp{
-    display: none;
-}
-#CadetShootingp{
-    display: none;
-}
-#CadetRememberancep{
-    display: none;
-}
-#CadetShopkeepingp{
-    display: none;
-}
-#DofEBronzep{
-    display: none;
-}
-#DofESilverp{
-    display: none;
+#portrait{
+  display: flex;
+  width: 30%; /* Adjust pixel size or use percentages like 30% */
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.bodybox{
-    width: 90rem;
-    /* min-width: 2000px; */
-    display: flex;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-color: rgb(50, 50, 50);
-    box-shadow: 0 1px 16px 0 rgb(0,0 ,0 );
-    justify-content: space-between;
-    column-gap: 10px;
-}
-.navbox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    width: 40%;
-    background-color: rgb(50, 50, 50);
-    border-top-left-radius: 10px ;
-    border-bottom-left-radius: 10px;
-    
-}
-.navigatione{
-    display: flex;
-    justify-content: center;
-    float: left;
-    padding: 0%;
-    width: 100%;
-    background-color: rgb(50, 50, 50);
-    border-top-left-radius: 10px ;
-    border-bottom-left-radius: 10px;
-}
-.navigatione ul{
-    list-style-type: none;
-    align-content: start;
-}
-.navigatione li{
-    padding: 1rem;
-    font-family: "Dela Gothic One";
-    font-size: 1.2rem;
-    text-align: center;
-}
-.navigatione a{
-    text-decoration: none;
-}
-.navigatione button:hover{
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    border-width: 100%;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-.navbutton{
-    border: none;
-    background-color: inherit;
-    color: white;
-    padding: 1rem;
-    font-family: "Dela Gothic One";
-    font-size: 2rem;
-}
-.subbutton{
-    border: none;
-    background-color: inherit;
-    color: white;
-    padding: 0.5rem;
-    font-family: "Dela Gothic One";
-    font-size: 1.5rem;
-    transition: bottom 0.5s ease;
-}
-.navsubutton button:hover{
-    background-color: rgb(50, 50, 50);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s ease;
+.words {
+  font-size: 3rem; /* Adjust this value as needed */
+  font-family: "Alata", sans-serif;
+  white-space: nowrap;
 }
 
-/* Start of Cadet Section   */
-#cadet{
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
-}
-.firstaidcertifcate{
-    padding: 1.2rem;
-    height: 800px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.firstaid1{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.firstaid2{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.firstaid3{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.firstaidbadge{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.cadetpromotion{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.cadet1star{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.cadetshootingbadge1{
-    padding: 1.2rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.almostcompletecadetpatch{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: 700px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.cadetshooting1{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: 600px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-.cadetshooting2{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: 500px;
-    width: 800px;
-    align-self: center;
-    object-fit: cover; 
-}
-.cadetshootingvid{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain; 
-}
-/* End of Cadet Section   */
-
-/* Start of DofE Section   */
-#dofe{
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
-}
-.thecooldrone{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.BAEstart{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.BAEmindmap{
-    padding: 1.2rem;
-    height: 600px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.geffect{
-    padding: 1.2rem;
-    height: 700px;
-    width: 600px;
-    object-fit: contain;
-    align-self: center;
-}
-.idea21{
-    padding: 1.2rem;
-    height: 700px;
-    width: 600px;
-    object-fit: contain;
-    align-self: center;
-}
-.idea2{
-    height: 700px;
-    width: 800px;
-    object-fit: contain;
-    align-self: center;
-}
-.inspiration{
-    padding: 1.2rem;
-    display: flex;
-    /* border: 1px solid; */
-}
-.b2{
-    object-fit: cover;
-    height: 400px;
-    width: 50%;
-}
-.xb35{
-    object-fit: cover;
-    height: 400px;
-    width: 50%;
-}
-.zipline{
-    object-fit: contain;
-    height: 400px;
-    width: auto
-}
-.CAD1{
-    display: flex;
-    padding: 1.2rem;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0;
-}
-.dronefront{
-    object-fit: cover;
-    height: 350px;
-    width: 50%;
-    /* border: 1px solid; */
-}
-.droneback{
-    object-fit: cover;
-    height: 350px;
-    width: 50%;
-    /* border: 1px solid; */
-}
-.finaldesign{
-    object-fit: contain;
-    height: auto;
-    height: auto;
-    padding: 1.2rem;
-}
-.dronelaunch{
-    display: flex;
-    align-self:center ;
-    object-fit: cover;
-    height: 800px;
-    width: 800px;
-    padding: 1.2rem;
-}
-.presentation{
-    display: flex;
-    flex-direction: column;
-    padding: 1.2rem;
-    justify-content: center;
-}
-.presentation1{
-    height: 400px;
-    width: 100%;
-    object-fit: contain;
-}
-.presentation2{
-    padding-top: 1.2rem;
-    height: 500px;
-    width: 100%;
-    object-fit: contain;
-}
-.silvercadet{
-    padding-top: 1.2rem;
-    height: 800px;
-    width: 100%;
-    object-fit: contain;
-}
-.enulogo{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.enu1{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;
-}
-.enu2{
-    padding: 1.2rem;
-    height: 400px;
-    width: 800px;
-    align-self: center;
-    object-fit: cover;  
-}
-#enuinstalink{
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    color: #bd73fa;
-    font-size: 1.2rem;
-}
-.catapult{
-    padding: 1.2rem;
-    height: 800px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;  
+.morewords {
+  font-size: 3rem; /* Adjust this value as needed */
+  font-family: "Alata", sans-serif;
+  white-space: nowrap;
+  color: white;
 }
 
-/* Projects Tab */
-.codebutton{
-    display: flex;
-    justify-content: center;
-    border: none;
-    background-color: inherit;
-    color: white;
-    padding: 1rem;
-    font-family: "Dela Gothic One";
-    font-size: 2rem;
-}
-.stylecodebutton button:hover{
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-.stylecodebutton{
-    display: flex;
-    justify-content: center;
+.socials{
+  display: inline-flex;
+
 }
 
-#Websitep{
-    display: flex;
-}
-#ArduinoStart{
-    display: none;
-}
-#sevensegmentp{
-    display: none;
-}
-#fourdigitsevensegmentp{
-    display: none;
-}
-#foursevencodep{
-    display: none;
-}
-#fakebombp{
-    display: none;
-}
-#fakebombcodep{
-    display: none;
-}
-#emulationp{
-    display: none;
-}
-#personal3dsp{
-    display: none;
-}
-#computerbuildingp{
-    display: none;
-}
-#upcomingideap{
-    display: none;
-}
-.ImportantPlaylist{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    color: #bd73fa;
-    font-size: 2rem;
-}
-.website1{
-    height: 600px;
-    width: 800px;
-    align-self: center;
-    object-fit: contain;  
+#CV {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 2rem 6rem;
+  width: 30%;
+  height: auto;
+  background-color: rgb(34, 34, 34);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5rem;
+  font-family: "Alata", sans-serif;
+  font-size: 5rem;
+  white-space: nowrap;
+  /* margin-top: 15px; */
 }
 
-/* Arduino Section  */
-.comment{
-    color: orange;
+.cv-icon {
+  width: 8rem;
+  height: auto;
+  fill: #ffffff;
+  padding: 3rem;
 }
-#arduinos{
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
+.linkedin-icon{
+    width: 8rem;
+  height: 8rem;
+  /* fill: #ffffff; */
+  padding: 3rem;
 }
-
-.arduinobeginningvid{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
+.email-icon{
+  width: 8rem;
+  height: 8rem;
+  fill: #000000;
+  padding: 3rem;
 }
-.blownled{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.ArduinoStartFile{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    /* padding: 1rem; */
-    color: #bd73fa;
-    font-size: 1.2rem;
-}
-.sevensegment1{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.sevensegmentvid{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.fourdigitsevensegment1{
-    height: 500px;
-    width: 800px;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.fourdigitsevensegment2{
-    height: 400px;
-    width: 800px;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.fourdigitsevensegmentvid{
-    height: 500px;
-    width: 800px;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.fakebomb1{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.fakebombvid{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-/* End of Arduino Section  */
-.s10{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.phonerepair1{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.phonerepair2{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.repairedphone{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.personal3ds1{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.motherboardassembly{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;    
-}
-.pc2{
-    height: 800px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;    
-}
-.pc1{
-    height: 800px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;    
-}
-.ak620{
-    height: 800px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;    
-}
-.cpureplace{
-    height: 800px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;    
-}
-.pc3{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;   
-}
-.pc4{
-    height: 700px;
-    width: 800px;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.pc5{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.pc6{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.finalpc1{
-    height: 700px;
-    width: 800px;
-    /* margin-top: 1rem; */
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.finalpc2{
-    height: 700px;
-    width: 800px;
-    /* margin-top: 1rem; */
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.adicomputer1{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.adicomputervid{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.nathancomputer1{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.nathancomputer2{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.nathancomputer3{
-    height: 700px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
-}
-.nathancomputer4{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
+.phone-icon{
+  width: 8rem;
+  height: 8rem;
+  fill: #000000;
+  padding: 3rem;
 }
 
-/* Upcoming Idea Section  */
-.old3ds1{
-    height: 600px;
-    width: 800px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* padding: 1rem; */
-    align-self: center;
-    object-fit: contain;  
+/* SLIDESHOW */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers arrows vertically */
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+  transition: 0.3s ease;
+  border-radius: 0 5px 5px 0;
+}
+s
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.backend{
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  height: 50%;
+  border-radius: 5rem;
+  padding: 2rem 4rem;
+}
+
+/* Position left arrow */
+.prev {
+  left: 1rem;
+}
+
+/* Position right arrow */
+.next {
+  right: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.myportfolio {
+  font-family: "Alata", sans-serif;
+  font-size: clamp(3rem, 10vw, 10rem); /* Minimum 2.5rem, maximum 6rem */
+  white-space: nowrap;
+  /* color: #e9e9e9; */
+  justify-self: right;
+color: #fcebd2; /* Match this hex code exactly to your cream background color */
+  mix-blend-mode: screen; /* Blends light text through dark backgrounds */
+}
+
+.mySlides {
+  display: none;
+  flex-direction:row;
+  align-items: flex-start; /* Aligns items to the left edge */
+  /* background-color: #000000; */
+  /* gap: 2rem; */
+}
+
+.mySlides p.words {
+  align-self: center;
+  white-space: normal;       /* Allows text to wrap into multiple lines */
+  flex: 1;                   /* Takes up the remaining horizontal space */
+  color: #ffffff;            /* Adjust color to match your design */
+}
+
+#isometric{
+  width: 40%;
+  align-self: center;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
+}
+
+#ort{
+  width: 50%;
+  align-self: center;  
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
+}
+
+#bae{
+  width: 40%;
+  align-self: center;  
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #2b3545; Optional: matches your card background color
 }
